@@ -1,0 +1,7 @@
+<article class="card card-body shadow rounded">
+    <img src="{{miUsuario.image}}" alt="img_user" class="card-img-top">
+    <div class="card-body">
+        <p class="text-center">{{miUsuario.first_name}} {{miUsuario.last_name}}</p>
+        <app-botones [parent]="'card'" [idSerie]="miUsuario._id"></app-botones>
+    </div>
+</article>

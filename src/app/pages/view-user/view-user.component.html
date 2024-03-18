@@ -1,0 +1,17 @@
+<section class="card mb-3">
+    <div class="row g-0">
+        <div class="col-md-4">
+            <img src="{{unUsuario.image}}" alt="">
+        </div>
+        <div class="col-md-8">
+            <div class="card-body">
+                <h5 class="card-title">{{unUsuario.first_name}} {{unUsuario.last_name}}</h5>
+                <p class="card-text">{{unUsuario.username}}.</p>
+                <p class="card-text"><small class="text-body-secondary">{{unUsuario.email}}</small></p>
+                <app-botones [parent]="'view'" [idSerie]="unUsuario._id"></app-botones>
+
+            </div>
+        </div>
+    </div>
+
+</section>
